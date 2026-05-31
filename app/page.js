@@ -217,7 +217,7 @@ export default function Home() {
                     placeholder="Alamat Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full pl-12 pr-4 py-3.5 rounded-2xl bg-slate-100 dark:bg-white/[0.03] border border-slate-200 dark:border-white/5 text-sm text-foreground placeholder-slate-500 focus:bg-white dark:focus:bg-white/[0.06] focus:border-cyan-500/50 outline-none transition-all duration-300"
+                    className="w-full pl-12 pr-4 py-3.5 rounded-2xl bg-white/[0.03] border border-card-border text-sm text-foreground placeholder-slate-500 focus:bg-white/[0.06] focus:border-cyan-500/50 outline-none transition-all duration-300"
                   />
                 </div>
 
@@ -229,7 +229,7 @@ export default function Home() {
                     placeholder="Kata Sandi"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="w-full pl-12 pr-4 py-3.5 rounded-2xl bg-slate-100 dark:bg-white/[0.03] border border-slate-200 dark:border-white/5 text-sm text-foreground placeholder-slate-500 focus:bg-white dark:focus:bg-white/[0.06] focus:border-cyan-500/50 outline-none transition-all duration-300"
+                    className="w-full pl-12 pr-4 py-3.5 rounded-2xl bg-white/[0.03] border border-card-border text-sm text-foreground placeholder-slate-500 focus:bg-white/[0.06] focus:border-cyan-500/50 outline-none transition-all duration-300"
                   />
                 </div>
 
@@ -293,7 +293,7 @@ export default function Home() {
                 Platform penyingkat URL modern. Melacak klik secara instan, mengamankan rute dengan password, dan membagikan QR Code dalam estetika kelas premium yang super ringan.
               </p>
 
-              <form onSubmit={handleQuickShorten} className="bg-slate-100/80 dark:bg-white/[0.02] p-2 rounded-2xl border border-slate-200 dark:border-white/5 flex flex-col md:flex-row gap-2 max-w-2xl mx-auto lg:mx-0 shadow-xl dark:shadow-2xl dark:shadow-black/40 focus-within:border-cyan-500/30 transition-all duration-300">
+              <form onSubmit={handleQuickShorten} className="bg-white/[0.02] p-2 rounded-2xl border border-card-border flex flex-col md:flex-row gap-2 max-w-2xl mx-auto lg:mx-0 shadow-xl dark:shadow-2xl dark:shadow-black/40 focus-within:border-cyan-500/30 transition-all duration-300">
                 <input
                   type="url"
                   required
@@ -302,7 +302,7 @@ export default function Home() {
                   onChange={(e) => setTempUrl(e.target.value)}
                   className="flex-1 min-w-[200px] px-4 py-3 bg-transparent border-0 outline-none text-foreground placeholder-slate-400 text-sm focus:ring-0"
                 />
-                <div className="flex items-center bg-slate-200/50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 rounded-xl px-3 py-1.5 focus-within:border-cyan-500/30 transition-all">
+                <div className="flex items-center bg-white/[0.02] border border-card-border rounded-xl px-3 py-1.5 focus-within:border-cyan-500/30 transition-all">
                   <span className="text-slate-500 text-xs font-semibold select-none">fly.link/</span>
                   <input
                     type="text"

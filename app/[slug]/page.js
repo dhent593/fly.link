@@ -123,7 +123,7 @@ export default function RedirectPage() {
                                 required
                                 value={inputPass}
                                 onChange={(e) => setInputPass(e.target.value)}
-                                className="w-full pl-12 pr-4 py-4 rounded-2xl bg-slate-200/50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 text-sm text-foreground placeholder-slate-400 focus:bg-white dark:focus:bg-white/[0.05] focus:border-yellow-500/40 text-center outline-none transition-all duration-300"
+                                className="w-full pl-12 pr-4 py-4 rounded-2xl bg-white/[0.02] border border-card-border text-sm text-foreground placeholder-slate-400 focus:bg-white/[0.05] focus:border-yellow-500/40 text-center outline-none transition-all duration-300"
                                 placeholder="Masukkan kata sandi..."
                             />
                         </div>
