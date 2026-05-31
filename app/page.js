@@ -344,14 +344,14 @@ export default function Home() {
               {/* Premium Dashboard Graphic Mockup */}
               <div className="relative z-10 w-full max-w-md glass-premium p-6 rounded-[28px] border border-card-border shadow-2xl transform rotate-[-1deg] hover:rotate-0 transition-all duration-500 hover:scale-[1.01]">
                 {/* Header Mockup */}
-                <div className="flex items-center justify-between mb-8 pb-4 border-b border-slate-200 dark:border-white/5">
+                <div className="flex items-center justify-between mb-8 pb-4 border-b border-card-border">
                   <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 bg-cyan-600/10 dark:bg-cyan-600/20 rounded-xl border border-cyan-500/20 flex items-center justify-center">
+                    <div className="w-9 h-9 bg-cyan-600/20 rounded-xl border border-cyan-500/20 flex items-center justify-center">
                       <Zap className="text-cyan-500 w-4.5 h-4.5" />
                     </div>
                     <div>
-                      <div className="h-3.5 w-24 bg-slate-300 dark:bg-slate-700 rounded-full mb-1.5"></div>
-                      <div className="h-2 w-14 bg-slate-200 dark:bg-slate-800 rounded-full"></div>
+                      <div className="h-3.5 w-24 bg-slate-700 rounded-full mb-1.5"></div>
+                      <div className="h-2 w-14 bg-slate-800 rounded-full"></div>
                     </div>
                   </div>
                   <div className="px-2.5 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-[9px] font-extrabold text-green-500 tracking-wider uppercase">
@@ -367,23 +367,23 @@ export default function Home() {
                   </div>
                   
                   {/* Bars */}
-                  <div className="h-20 flex items-end gap-3 px-2 pt-2 border-b border-slate-200 dark:border-white/5">
-                    <div className="flex-1 bg-slate-200 dark:bg-slate-800 rounded-t-md h-[40%]"></div>
-                    <div className="flex-1 bg-slate-200 dark:bg-slate-800 rounded-t-md h-[55%]"></div>
+                  <div className="h-20 flex items-end gap-3 px-2 pt-2 border-b border-card-border">
+                    <div className="flex-1 bg-slate-800 rounded-t-md h-[40%]"></div>
+                    <div className="flex-1 bg-slate-800 rounded-t-md h-[55%]"></div>
                     <div className="flex-1 bg-gradient-to-t from-cyan-500 to-blue-500 rounded-t-md h-[85%] relative shadow-lg shadow-cyan-500/20"></div>
-                    <div className="flex-1 bg-slate-200 dark:bg-slate-800 rounded-t-md h-[60%]"></div>
-                    <div className="flex-1 bg-slate-200 dark:bg-slate-800 rounded-t-md h-[45%]"></div>
+                    <div className="flex-1 bg-slate-800 rounded-t-md h-[60%]"></div>
+                    <div className="flex-1 bg-slate-800 rounded-t-md h-[45%]"></div>
                     <div className="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t-md h-[95%] relative shadow-lg shadow-indigo-500/20"></div>
-                    <div className="flex-1 bg-slate-200 dark:bg-slate-800 rounded-t-md h-[30%]"></div>
+                    <div className="flex-1 bg-slate-800 rounded-t-md h-[30%]"></div>
                   </div>
 
                   {/* Bottom details */}
                   <div className="grid grid-cols-2 gap-3 pt-2">
-                    <div className="bg-slate-100 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 rounded-xl p-3">
+                    <div className="bg-white/[0.02] border border-card-border rounded-xl p-3">
                       <div className="text-[10px] text-slate-400 font-bold uppercase">Tautan Pendek</div>
                       <div className="text-foreground font-extrabold text-xs sm:text-sm mt-1">fly.link/promo</div>
                     </div>
-                    <div className="bg-slate-100 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 rounded-xl p-3">
+                    <div className="bg-white/[0.02] border border-card-border rounded-xl p-3">
                       <div className="text-[10px] text-slate-400 font-bold uppercase">Total Kunjungan</div>
                       <div className="text-foreground font-extrabold text-xs sm:text-sm mt-1">8,491 Klik</div>
                     </div>

@@ -743,7 +743,7 @@ export default function Dashboard() {
                                                     <p className="text-xs text-slate-500 dark:text-slate-400 truncate mt-1 max-w-[300px] md:max-w-[450px]" title={link.original_url}>{link.original_url}</p>
                                                 </div>
                                                 <div className="flex items-center gap-2 border-t border-card-border md:border-t-0 pt-4 md:pt-0 w-full md:w-auto justify-end">
-                                                    <button onClick={() => handleEditClick(link)} className="px-3 py-2 bg-white/5 border border-card-border text-slate-700 dark:text-slate-300 rounded-xl text-xs font-bold hover:bg-white/10 flex items-center gap-1 transition-all cursor-pointer">
+                                                    <button onClick={() => handleEditClick(link)} className="px-3 py-2 bg-white/5 border border-card-border text-white rounded-xl text-xs font-bold hover:bg-white/10 flex items-center gap-1 transition-all cursor-pointer">
                                                         <Edit3 size={13} /> Edit
                                                     </button>
                                                     <button onClick={() => openQrModal(link)} className="px-3 py-2 bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 rounded-xl text-xs font-bold hover:bg-cyan-500/20 flex items-center gap-1 border border-cyan-500/10 transition-all cursor-pointer">
@@ -828,7 +828,7 @@ export default function Dashboard() {
                                                 </div>
                                             </div>
                                             <div className="flex items-center gap-2 border-t border-card-border md:border-t-0 pt-4 md:pt-0 w-full md:w-auto justify-end">
-                                                <button onClick={() => handleEditClick(link)} className="px-3 py-2 bg-white/5 border border-card-border text-slate-700 dark:text-slate-300 rounded-xl text-xs font-bold hover:bg-white/10 flex items-center gap-1 transition-all cursor-pointer">
+                                                <button onClick={() => handleEditClick(link)} className="px-3 py-2 bg-white/5 border border-card-border text-white rounded-xl text-xs font-bold hover:bg-white/10 flex items-center gap-1 transition-all cursor-pointer">
                                                     <Edit3 size={13} /> Edit
                                                 </button>
                                                 <button onClick={() => openQrModal(link)} className="px-3 py-2 bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 rounded-xl text-xs font-bold hover:bg-cyan-500/20 flex items-center gap-1 border border-cyan-500/10 transition-all cursor-pointer">
