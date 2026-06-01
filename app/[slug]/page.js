@@ -63,12 +63,12 @@ export default function RedirectPage() {
                         <ShieldAlert className="text-red-500 w-8 h-8" />
                     </div>
                     <h2 className="text-2xl font-bold font-display text-foreground mb-2">Tautan Tidak Ditemukan</h2>
-                    <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-8 font-semibold">
+                    <p className="text-sm text-slate-400 leading-relaxed mb-8 font-semibold">
                         Maaf, tautan pendek yang Anda tuju tidak valid, sudah dihapus, atau masa aktifnya telah habis.
                     </p>
                     <a
                         href="/"
-                        className="inline-flex items-center gap-2 bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 text-foreground font-bold text-xs py-3.5 px-6 rounded-2xl border border-card-border transition-all duration-300 shadow-sm"
+                        className="inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 text-foreground font-bold text-xs py-3.5 px-6 rounded-2xl border border-card-border transition-all duration-300 shadow-sm"
                     >
                         Kembali ke Beranda <ArrowRight className="w-4 h-4" />
                     </a>
@@ -89,7 +89,7 @@ export default function RedirectPage() {
                         <Send className="text-cyan-500 w-8 h-8 -rotate-45 transform translate-x-[-1px] translate-y-[1px]" />
                     </div>
                     <h3 className="text-lg font-bold text-foreground font-display">Memproses Pengalihan...</h3>
-                    <p className="text-xs text-slate-500 dark:text-slate-400 mt-2 font-semibold animate-pulse">Menghubungkan Anda ke tujuan secara aman.</p>
+                    <p className="text-xs text-slate-400 mt-2 font-semibold animate-pulse">Menghubungkan Anda ke tujuan secara aman.</p>
                 </div>
             </div>
         );
@@ -99,8 +99,8 @@ export default function RedirectPage() {
     return (
         <div className="min-h-screen bg-background text-foreground flex items-center justify-center px-4 relative overflow-hidden font-sans transition-colors duration-500">
             {/* Glow spheres */}
-            <div className="absolute top-[20%] left-[20%] w-[350px] h-[350px] bg-yellow-500/5 dark:bg-yellow-500/10 rounded-full blur-[110px] pointer-events-none"></div>
-            <div className="absolute bottom-[20%] right-[20%] w-[400px] h-[400px] bg-indigo-500/5 dark:bg-indigo-500/10 rounded-full blur-[130px] pointer-events-none"></div>
+            <div className="absolute top-[20%] left-[20%] w-[350px] h-[350px] bg-yellow-500/10 rounded-full blur-[110px] pointer-events-none"></div>
+            <div className="absolute bottom-[20%] right-[20%] w-[400px] h-[400px] bg-indigo-500/10 rounded-full blur-[130px] pointer-events-none"></div>
 
             <main className="max-w-md w-full relative z-10 animate-fade-in-up">
                 <div className={`glass-premium p-8 md:p-10 rounded-[32px] border border-card-border text-center relative overflow-hidden shadow-2xl ${shake ? 'animate-shake' : ''} transition-all`}>
@@ -109,9 +109,9 @@ export default function RedirectPage() {
                     <div className="w-16 h-16 rounded-2xl bg-yellow-500/10 border border-yellow-500/20 flex items-center justify-center mx-auto mb-6 shadow-inner">
                         <KeyRound className="text-yellow-500 w-8 h-8 animate-pulse" />
                     </div>
-
+ 
                     <h2 className="text-2xl font-bold font-display text-foreground mb-2">Tautan Terkunci</h2>
-                    <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-8 max-w-xs mx-auto font-semibold">
+                    <p className="text-xs sm:text-sm text-slate-400 leading-relaxed mb-8 max-w-xs mx-auto font-semibold">
                         Tautan ini diamankan secara eksklusif. Masukkan kata sandi yang valid untuk dapat melanjutkan ke tujuan asli di <span className="text-cyan-500">fly.link</span>.
                     </p>
 

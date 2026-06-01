@@ -10,8 +10,8 @@ export default function KeamananPage() {
   return (
     <div className="min-h-screen bg-background text-foreground font-sans relative overflow-hidden flex flex-col justify-between transition-colors duration-500">
       {/* Decorative Glow Elements */}
-      <div className="absolute top-[10%] right-[10%] w-[300px] h-[300px] bg-purple-600/5 dark:bg-purple-600/10 rounded-full blur-[100px] pointer-events-none"></div>
-      <div className="absolute bottom-[20%] left-[10%] w-[350px] h-[350px] bg-cyan-500/5 dark:bg-cyan-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute top-[10%] right-[10%] w-[300px] h-[300px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+      <div className="absolute bottom-[20%] left-[10%] w-[350px] h-[350px] bg-cyan-600/10 rounded-full blur-[120px] pointer-events-none"></div>
 
       {/* Modular Navbar */}
       <Navbar />
@@ -20,7 +20,7 @@ export default function KeamananPage() {
       <main className="max-w-5xl mx-auto px-6 py-12 flex-1 relative z-10 flex flex-col justify-center animate-fade-in-up">
         {/* Title */}
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/15 text-[10px] text-purple-600 dark:text-purple-400 font-bold tracking-wider uppercase">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/15 text-[10px] text-purple-400 font-bold tracking-wider uppercase">
             Privasi & Proteksi
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold text-foreground tracking-tight leading-tight font-display">
@@ -29,7 +29,7 @@ export default function KeamananPage() {
               Kelas Dunia
             </span>
           </h1>
-          <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+          <p className="text-sm text-slate-400 leading-relaxed font-medium">
             Keamanan tautan dan data pribadi Anda adalah prioritas mutlak kami. Kami menerapkan standar perlindungan terenkripsi untuk mengamankan data Anda di setiap tahap.
           </p>
         </div>
@@ -42,7 +42,7 @@ export default function KeamananPage() {
               <Lock size={20} />
             </div>
             <h3 className="text-base font-bold text-foreground font-display">Proteksi Link Terenkripsi</h3>
-            <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
+            <p className="text-[11px] text-slate-400 leading-relaxed">
               Tautan yang Anda proteksi dengan kata sandi disimpan menggunakan standar hash searah yang aman. Akses tidak sah diblokir sepenuhnya sebelum permintaan menyentuh server tujuan Anda.
             </p>
           </div>
@@ -53,7 +53,7 @@ export default function KeamananPage() {
               <Key size={20} />
             </div>
             <h3 className="text-base font-bold text-foreground font-display">Otentikasi Token JWT</h3>
-            <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
+            <p className="text-[11px] text-slate-400 leading-relaxed">
               Sesi login Anda dilindungi oleh JSON Web Token (JWT) terenkripsi dari Supabase. Sesi dipulihkan secara instan dari penyimpanan terproteksi lokal peramban, mencegah ancaman pembajakan sesi.
             </p>
           </div>
@@ -64,7 +64,7 @@ export default function KeamananPage() {
               <Server size={20} />
             </div>
             <h3 className="text-base font-bold text-foreground font-display">Row-Level Security (RLS)</h3>
-            <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
+            <p className="text-[11px] text-slate-400 leading-relaxed">
               Database PostgreSQL kami menerapkan Row-Level Security (RLS) yang ketat. Ini menjamin bahwa data tautan Anda terisolasi secara mutlak di tingkat database, sehingga pengguna lain tidak dapat membaca atau memodifikasinya.
             </p>
           </div>
@@ -77,7 +77,7 @@ export default function KeamananPage() {
           </div>
           <div className="space-y-1">
             <h4 className="font-bold text-foreground font-display text-sm">Pencegahan Penyalahgunaan (Spam & Phishing)</h4>
-            <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+            <p className="text-xs text-slate-400 leading-relaxed">
               Kami secara aktif menyaring tautan yang ditujukan untuk penipuan, phishing, atau penyebaran malware. fly.link berkomitmen penuh untuk menjaga integritas rute pengalihan agar internet menjadi tempat yang lebih aman.
             </p>
           </div>
@@ -89,7 +89,7 @@ export default function KeamananPage() {
             <Shield className="text-cyan-500 w-6 h-6 animate-pulse" />
           </div>
           <h2 className="text-2xl font-bold font-display text-foreground">Privasi Anda Adalah Hak Mutlak</h2>
-          <p className="text-xs text-slate-500 dark:text-slate-400 max-w-md mx-auto leading-relaxed">
+          <p className="text-xs text-slate-400 max-w-md mx-auto leading-relaxed">
             fly.link tidak pernah menjual data klik atau tautan pribadi Anda kepada pihak ketiga mana pun.
           </p>
           <button

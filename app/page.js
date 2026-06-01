@@ -113,9 +113,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground relative overflow-hidden font-sans flex flex-col justify-between transition-colors duration-500">
       {/* Background Decorative Glowing Elements */}
-      <div className="absolute top-[10%] left-[10%] w-[350px] h-[350px] bg-cyan-500/5 dark:bg-cyan-600/10 rounded-full blur-[120px] pointer-events-none"></div>
-      <div className="absolute bottom-[10%] right-[10%] w-[450px] h-[450px] bg-indigo-500/5 dark:bg-indigo-600/10 rounded-full blur-[150px] pointer-events-none"></div>
-      <div className="absolute top-[40%] left-[50%] -translate-x-1/2 w-[600px] h-[600px] bg-blue-500/3 dark:bg-blue-600/5 rounded-full blur-[180px] pointer-events-none"></div>
+      <div className="absolute top-[10%] left-[10%] w-[350px] h-[350px] bg-cyan-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute bottom-[10%] right-[10%] w-[450px] h-[450px] bg-indigo-600/10 rounded-full blur-[150px] pointer-events-none"></div>
+      <div className="absolute top-[40%] left-[50%] -translate-x-1/2 w-[600px] h-[600px] bg-blue-600/5 rounded-full blur-[180px] pointer-events-none"></div>
 
       {/* Toast Notification Component */}
       {toast.visible && (
@@ -163,7 +163,7 @@ export default function Home() {
               </div>
 
               <h2 className="text-2xl font-bold font-display text-foreground mb-3">Verifikasi Email Anda</h2>
-              <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+              <p className="text-sm text-slate-300 leading-relaxed mb-4">
                 Kami telah mengirimkan tautan konfirmasi ke <span className="font-bold text-foreground text-base">{email}</span>.
               </p>
               <p className="text-xs text-slate-400 leading-relaxed mb-8">
@@ -176,7 +176,7 @@ export default function Home() {
                   setIsLoginView(true);
                   setAuthMode('login');
                 }}
-                className="w-full bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 text-foreground font-semibold text-xs py-3.5 px-6 rounded-2xl border border-card-border transition-all duration-300 cursor-pointer active:scale-95"
+                className="w-full bg-white/5 hover:bg-white/10 text-foreground font-semibold text-xs py-3.5 px-6 rounded-2xl border border-card-border transition-all duration-300 cursor-pointer active:scale-95"
               >
                 Kembali ke Login
               </button>
@@ -189,7 +189,7 @@ export default function Home() {
               <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-cyan-500/20 to-transparent blur-xl rounded-full"></div>
 
               {/* Back Icon button */}
-              <button onClick={() => setIsLoginView(false)} className="absolute top-6 left-6 text-slate-400 hover:text-foreground transition-colors p-2 hover:bg-slate-100 dark:hover:bg-white/5 rounded-xl cursor-pointer">
+              <button onClick={() => setIsLoginView(false)} className="absolute top-6 left-6 text-slate-400 hover:text-foreground transition-colors p-2 hover:bg-white/5 rounded-xl cursor-pointer">
                 <ArrowRight className="w-5 h-5 rotate-180" />
               </button>
 
@@ -203,7 +203,7 @@ export default function Home() {
                 <h2 className="text-xl font-bold font-display text-foreground">
                   {authMode === 'login' ? 'Selamat Datang Kembali' : 'Daftar Akun Baru'}
                 </h2>
-                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                <p className="text-xs text-slate-400 mt-1">
                   {authMode === 'login' ? 'Masuk untuk mengelola tautan pendek Anda.' : 'Mulai penyingkatan tautan premium sekarang.'}
                 </p>
               </div>
@@ -277,7 +277,7 @@ export default function Home() {
           <main className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center py-12 flex-1 animate-fade-in-up">
             {/* Kiri: Teks & Input Singkat */}
             <div className="space-y-8 text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/15 text-xs text-cyan-600 dark:text-cyan-400 font-bold tracking-wide uppercase shadow-sm">
+              <div className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/15 text-xs text-cyan-400 font-bold tracking-wide uppercase shadow-sm">
                 <Zap className="w-3.5 h-3.5 animate-pulse" /> Manajemen Tautan Modern
               </div>
               
@@ -289,11 +289,11 @@ export default function Home() {
                 dan Sekali Klik.
               </h1>
               
-              <p className="text-sm md:text-base text-slate-500 dark:text-slate-400 max-w-lg mx-auto lg:mx-0 leading-relaxed font-normal">
+              <p className="text-sm md:text-base text-slate-400 max-w-lg mx-auto lg:mx-0 leading-relaxed font-normal">
                 Platform penyingkat URL modern. Melacak klik secara instan, mengamankan rute dengan password, dan membagikan QR Code dalam estetika kelas premium yang super ringan.
               </p>
 
-              <form onSubmit={handleQuickShorten} className="bg-white/[0.02] p-2 rounded-2xl border border-card-border flex flex-col md:flex-row gap-2 max-w-2xl mx-auto lg:mx-0 shadow-xl dark:shadow-2xl dark:shadow-black/40 focus-within:border-cyan-500/30 transition-all duration-300">
+              <form onSubmit={handleQuickShorten} className="bg-white/[0.02] p-2 rounded-2xl border border-card-border flex flex-col md:flex-row gap-2 max-w-2xl mx-auto lg:mx-0 shadow-2xl shadow-black/40 focus-within:border-cyan-500/30 transition-all duration-300">
                 <input
                   type="url"
                   required

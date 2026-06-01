@@ -10,8 +10,8 @@ export default function TentangPage() {
   return (
     <div className="min-h-screen bg-background text-foreground font-sans relative overflow-hidden flex flex-col justify-between transition-colors duration-500">
       {/* Decorative Glow Elements */}
-      <div className="absolute top-[10%] left-[10%] w-[320px] h-[320px] bg-pink-500/5 dark:bg-pink-600/10 rounded-full blur-[100px] pointer-events-none"></div>
-      <div className="absolute bottom-[20%] right-[10%] w-[380px] h-[380px] bg-indigo-500/5 dark:bg-indigo-600/10 rounded-full blur-[130px] pointer-events-none"></div>
+      <div className="absolute top-[10%] left-[10%] w-[320px] h-[320px] bg-pink-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+      <div className="absolute bottom-[20%] right-[10%] w-[380px] h-[380px] bg-indigo-600/10 rounded-full blur-[130px] pointer-events-none"></div>
 
       {/* Modular Navbar */}
       <Navbar />
@@ -20,7 +20,7 @@ export default function TentangPage() {
       <main className="max-w-4xl mx-auto px-6 py-12 flex-1 relative z-10 flex flex-col justify-center animate-fade-in-up">
         {/* Title */}
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/15 text-[10px] text-pink-600 dark:text-pink-400 font-bold tracking-wider uppercase">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/15 text-[10px] text-pink-400 font-bold tracking-wider uppercase">
             Cerita fly.link
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold text-foreground tracking-tight leading-tight font-display">
@@ -29,7 +29,7 @@ export default function TentangPage() {
               Lebih Bersih & Cepat
             </span>
           </h1>
-          <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+          <p className="text-sm text-slate-400 leading-relaxed font-medium">
             fly.link lahir dari kegelisahan kami terhadap penyingkat tautan tradisional yang penuh dengan iklan pop-up yang mengganggu, waktu tunggu sengaja, dan antarmuka usang.
           </p>
         </div>
@@ -39,11 +39,11 @@ export default function TentangPage() {
           <div className="space-y-6">
             <h3 className="text-2xl font-bold font-display text-foreground">Visi & Filosofi Kami</h3>
             
-            <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-normal">
+            <p className="text-xs sm:text-sm text-slate-400 leading-relaxed font-normal">
               Kami percaya bahwa sebuah tautan adalah jembatan digital yang menghubungkan ide, karya, bisnis, dan manusia. Jembatan tersebut haruslah **cepat**, **indah**, dan **aman**.
             </p>
             
-            <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-normal">
+            <p className="text-xs sm:text-sm text-slate-400 leading-relaxed font-normal">
               Kami menolak menggunakan halaman perantara berisi iklan yang memperlambat koneksi Anda. Filosofi utama fly.link adalah **Kecepatan Instan Tanpa Kompromi**.
             </p>
 
@@ -83,7 +83,7 @@ export default function TentangPage() {
               </div>
             </div>
 
-            <blockquote className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed italic border-l-2 border-pink-500/50 pl-4 py-1">
+            <blockquote className="text-xs sm:text-sm text-slate-300 leading-relaxed italic border-l-2 border-pink-500/50 pl-4 py-1">
               "Sebuah alat (utility) yang baik bukan hanya tentang fungsinya yang bekerja, melainkan tentang bagaimana antarmuka tersebut membuat penggunanya tersenyum karena kemudahan dan keindahannya."
             </blockquote>
 
@@ -99,7 +99,7 @@ export default function TentangPage() {
         {/* Call to Action */}
         <div className="glass-premium p-8 rounded-[32px] border border-card-border text-center space-y-6">
           <h2 className="text-2xl font-bold font-display text-foreground">Bergabung Bersama Kami</h2>
-          <p className="text-xs text-slate-500 dark:text-slate-400 max-w-md mx-auto leading-relaxed">
+          <p className="text-xs text-slate-400 max-w-md mx-auto leading-relaxed">
             Mulailah mengelola tautan digital Anda dalam platform terindah, tercepat, dan teraman secara gratis.
           </p>
           <button
