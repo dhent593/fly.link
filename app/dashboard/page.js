@@ -75,7 +75,7 @@ export default function Dashboard() {
         if (session?.user) {
             setUser(session.user);
             setLoadingUser(false);
-            fetchLinks();
+            fetchLinks(session.user.id);
             
             // Periksa apakah ada tautan pending dari beranda
             const pendingUrl = localStorage.getItem('pendingUrl');
@@ -107,7 +107,7 @@ export default function Dashboard() {
             } else {
                 setUser(user);
                 setLoadingUser(false);
-                fetchLinks();
+                fetchLinks(user.id);
                 
                 // Periksa pending link
                 const pendingUrl = localStorage.getItem('pendingUrl');
@@ -125,9 +125,15 @@ export default function Dashboard() {
         }
     };
 
-    const fetchLinks = async () => {
+    const fetchLinks = async (userId) => {
+        const targetUid = userId || user?.id;
+        if (!targetUid) return;
         setLoadingLinks(true);
-        const { data, error } = await supabase.from('links').select('*').order('created_at', { ascending: false });
+        const { data, error } = await supabase
+            .from('links')
+            .select('*')
+            .eq('user_id', targetUid)
+            .order('created_at', { ascending: false });
         if (error) {
             showToast(error.message, 'error');
         } else if (data) {
@@ -161,7 +167,7 @@ export default function Dashboard() {
             showToast("Gagal! Mungkin slug sudah dipakai atau data tidak valid.", "error");
         } else {
             showToast("Tautan baru berhasil dibuat!", "success");
-            fetchLinks();
+            fetchLinks(user?.id);
             setUrl('');
             setSlug('');
             setPassword('');
@@ -178,7 +184,7 @@ export default function Dashboard() {
                 showToast(error.message, 'error');
             } else {
                 showToast('Tautan berhasil dihapus!', 'success');
-                fetchLinks();
+                fetchLinks(user?.id);
             }
             setLoadingAction(false);
         }
@@ -213,7 +219,7 @@ export default function Dashboard() {
         } else {
             showToast('Tautan berhasil diperbarui!', 'success');
             setIsEditModalOpen(false);
-            fetchLinks();
+            fetchLinks(user?.id);
         }
         setLoadingAction(false);
     };
