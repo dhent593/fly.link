@@ -54,7 +54,7 @@ export default function Navbar({ onLoginClick, onRegisterClick, isDashboard = fa
             <Send className="text-white w-4 h-4 -rotate-45 transform translate-x-[-1px] translate-y-[1px]" />
           </div>
           <span className="font-extrabold text-xl sm:text-2xl tracking-tighter text-foreground font-display">
-            fly<span className="text-cyan-500 font-bold">.link</span>
+            flyku<span className="text-cyan-500 font-bold">.vercel.app</span>
           </span>
         </div>
 

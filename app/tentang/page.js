@@ -21,7 +21,7 @@ export default function TentangPage() {
         {/* Title */}
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/15 text-[10px] text-pink-400 font-bold tracking-wider uppercase">
-            Cerita fly.link
+            Cerita flyku.vercel.app
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold text-foreground tracking-tight leading-tight font-display">
             Membangun Jembatan Digital yang{' '}
@@ -30,7 +30,7 @@ export default function TentangPage() {
             </span>
           </h1>
           <p className="text-sm text-slate-400 leading-relaxed font-medium">
-            fly.link lahir dari kegelisahan kami terhadap penyingkat tautan tradisional yang penuh dengan iklan pop-up yang mengganggu, waktu tunggu sengaja, dan antarmuka usang.
+            flyku.vercel.app lahir dari kegelisahan kami terhadap penyingkat tautan tradisional yang penuh dengan iklan pop-up yang mengganggu, waktu tunggu sengaja, dan antarmuka usang.
           </p>
         </div>
 
@@ -44,7 +44,7 @@ export default function TentangPage() {
             </p>
             
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed font-normal">
-              Kami menolak menggunakan halaman perantara berisi iklan yang memperlambat koneksi Anda. Filosofi utama fly.link adalah **Kecepatan Instan Tanpa Kompromi**.
+              Kami menolak menggunakan halaman perantara berisi iklan yang memperlambat koneksi Anda. Filosofi utama flyku.vercel.app adalah **Kecepatan Instan Tanpa Kompromi**.
             </p>
 
             <div className="pt-2 flex flex-col gap-3">

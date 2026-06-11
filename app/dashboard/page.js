@@ -24,7 +24,7 @@ export default function Dashboard() {
     const [sortBy, setSortBy] = useState('latest'); // 'latest' | 'clicks' | 'alphabetical'
 
     // Custom QR Code Generator State
-    const [qrText, setQrText] = useState('https://fly.link');
+    const [qrText, setQrText] = useState('https://flyku.vercel.app');
     const [qrSize, setQrSize] = useState(256);
 
     // Profile Settings State
@@ -415,7 +415,7 @@ export default function Dashboard() {
                         <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
                             <Send className="text-white w-4 h-4 -rotate-45 transform translate-x-[-1px] translate-y-[1px]" />
                         </div>
-                        fly<span className="text-cyan-500">.link</span>
+                        flyku<span className="text-cyan-500">.vercel.app</span>
                     </div>
 
                     <div className="px-4 mb-6">
@@ -499,7 +499,7 @@ export default function Dashboard() {
                                 <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/20">
                                     <Send className="text-white w-4 h-4 -rotate-45 transform translate-x-[-1px] translate-y-[1px]" />
                                 </div>
-                                fly<span className="text-cyan-500">.link</span>
+                                flyku<span className="text-cyan-500">.vercel.app</span>
                             </div>
                             <button onClick={() => setIsSidebarOpen(false)} className="p-2 rounded-lg bg-white/[0.02] border border-card-border text-slate-400 hover:text-foreground cursor-pointer transition">
                                 <X size={18} />
@@ -653,7 +653,7 @@ export default function Dashboard() {
                                             />
                                         </div>
                                         <div className="md:col-span-4 flex items-center bg-white/[0.02] border border-card-border rounded-xl overflow-hidden focus-within:border-cyan-500/40 focus-within:bg-[#07090e] transition">
-                                            <span className="pl-4 text-slate-500 text-xs font-semibold select-none">fly.link/</span>
+                                            <span className="pl-4 text-slate-500 text-xs font-semibold select-none">flyku.vercel.app/</span>
                                             <input
                                                 type="text"
                                                 placeholder="kustom-slug"
@@ -729,7 +729,7 @@ export default function Dashboard() {
                                                             <Link2 size={12} className="text-cyan-500" />
                                                         </div>
                                                         <a href={`/${link.slug}`} target="_blank" className="font-bold text-cyan-600 dark:text-cyan-400 hover:text-cyan-500 transition-colors text-sm">
-                                                            fly.link/{link.slug}
+                                                            flyku.vercel.app/{link.slug}
                                                         </a>
                                                         <button onClick={() => copyToClipboard(`${window.location.origin}/${link.slug}`)} className="text-slate-500 hover:text-foreground transition-colors p-1 cursor-pointer" title="Salin tautan">
                                                             <Copy size={13} />
@@ -810,7 +810,7 @@ export default function Dashboard() {
                                                         <Link2 size={12} className="text-cyan-500" />
                                                     </div>
                                                     <a href={`/${link.slug}`} target="_blank" className="font-bold text-cyan-600 dark:text-cyan-400 hover:text-cyan-500 transition-colors text-sm">
-                                                        fly.link/{link.slug}
+                                                        flyku.vercel.app/{link.slug}
                                                     </a>
                                                     <button onClick={() => copyToClipboard(`${window.location.origin}/${link.slug}`)} className="text-slate-500 hover:text-foreground transition-colors p-1 cursor-pointer" title="Salin tautan">
                                                         <Copy size={13} />
@@ -906,7 +906,7 @@ export default function Dashboard() {
                                 <div className="p-5 bg-white rounded-3xl inline-block shadow-2xl relative group overflow-hidden border border-white/10">
                                     <QRCodeSVG
                                         id="custom-qr-svg"
-                                        value={qrText || "https://fly.link"}
+                                        value={qrText || "https://flyku.vercel.app"}
                                         size={200}
                                         level={"H"}
                                         includeMargin={true}
@@ -1026,7 +1026,7 @@ export default function Dashboard() {
                         </button>
                         <div className="mt-3">
                             <h4 className="font-bold text-foreground font-display text-lg">QR Code Tautan</h4>
-                            <p className="text-xs text-slate-400 mt-1 font-semibold">Scan untuk mengakses fly.link/{activeQrLink.slug}</p>
+                            <p className="text-xs text-slate-400 mt-1 font-semibold">Scan untuk mengakses flyku.vercel.app/{activeQrLink.slug}</p>
                             <div className="my-6 p-4 bg-white rounded-2xl inline-block shadow-inner border border-white/10">
                                 <QRCodeSVG
                                     id="qr-code-svg"
@@ -1084,7 +1084,7 @@ export default function Dashboard() {
                                 <div className="space-y-1.5">
                                     <label className="text-[10px] text-slate-500 dark:text-slate-400 font-bold uppercase tracking-wider">Custom Slug</label>
                                     <div className="flex items-center bg-white/[0.02] border border-card-border rounded-xl overflow-hidden focus-within:border-cyan-500/40 focus-within:bg-[#07090e] transition">
-                                        <span className="pl-4 text-slate-500 text-xs font-semibold select-none">fly.link/</span>
+                                        <span className="pl-4 text-slate-500 text-xs font-semibold select-none">flyku.vercel.app/</span>
                                         <input
                                             type="text"
                                             required

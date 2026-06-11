@@ -78,7 +78,7 @@ export default function KeamananPage() {
           <div className="space-y-1">
             <h4 className="font-bold text-foreground font-display text-sm">Pencegahan Penyalahgunaan (Spam & Phishing)</h4>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Kami secara aktif menyaring tautan yang ditujukan untuk penipuan, phishing, atau penyebaran malware. fly.link berkomitmen penuh untuk menjaga integritas rute pengalihan agar internet menjadi tempat yang lebih aman.
+              Kami secara aktif menyaring tautan yang ditujukan untuk penipuan, phishing, atau penyebaran malware. flyku.vercel.app berkomitmen penuh untuk menjaga integritas rute pengalihan agar internet menjadi tempat yang lebih aman.
             </p>
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function KeamananPage() {
           </div>
           <h2 className="text-2xl font-bold font-display text-foreground">Privasi Anda Adalah Hak Mutlak</h2>
           <p className="text-xs text-slate-400 max-w-md mx-auto leading-relaxed">
-            fly.link tidak pernah menjual data klik atau tautan pribadi Anda kepada pihak ketiga mana pun.
+            flyku.vercel.app tidak pernah menjual data klik atau tautan pribadi Anda kepada pihak ketiga mana pun.
           </p>
           <button
             onClick={() => router.push('/?auth=login')}

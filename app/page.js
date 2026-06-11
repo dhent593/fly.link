@@ -198,7 +198,7 @@ export default function Home() {
                   <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/20">
                     <Send className="text-white w-4 h-4 -rotate-45 transform translate-x-[-1px] translate-y-[1px]" />
                   </div>
-                  fly<span className="text-cyan-500">.link</span>
+                  flyku<span className="text-cyan-500">.vercel.app</span>
                 </div>
                 <h2 className="text-xl font-bold font-display text-foreground">
                   {authMode === 'login' ? 'Selamat Datang Kembali' : 'Daftar Akun Baru'}
@@ -303,7 +303,7 @@ export default function Home() {
                   className="flex-1 min-w-[200px] px-4 py-3 bg-transparent border-0 outline-none text-foreground placeholder-slate-400 text-sm focus:ring-0"
                 />
                 <div className="flex items-center bg-white/[0.02] border border-card-border rounded-xl px-3 py-1.5 focus-within:border-cyan-500/30 transition-all">
-                  <span className="text-slate-500 text-xs font-semibold select-none">fly.link/</span>
+                  <span className="text-slate-500 text-xs font-semibold select-none">flyku.vercel.app/</span>
                   <input
                     type="text"
                     placeholder="kustom-slug"
@@ -381,7 +381,7 @@ export default function Home() {
                   <div className="grid grid-cols-2 gap-3 pt-2">
                     <div className="bg-white/[0.02] border border-card-border rounded-xl p-3">
                       <div className="text-[10px] text-slate-400 font-bold uppercase">Tautan Pendek</div>
-                      <div className="text-foreground font-extrabold text-xs sm:text-sm mt-1">fly.link/promo</div>
+                      <div className="text-foreground font-extrabold text-xs sm:text-sm mt-1">flyku.vercel.app/promo</div>
                     </div>
                     <div className="bg-white/[0.02] border border-card-border rounded-xl p-3">
                       <div className="text-[10px] text-slate-400 font-bold uppercase">Total Kunjungan</div>

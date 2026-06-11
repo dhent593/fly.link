@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "fly.link | Premium URL Shortener Platform",
+  title: "flyku.vercel.app | Premium URL Shortener Platform",
   description: "Platform penyingkat URL modern yang ringan, cepat, dan aman. Lacak klik tautan secara real-time, buat QR Code, dan amankan tautan dengan proteksi sandi kustom.",
 };
 

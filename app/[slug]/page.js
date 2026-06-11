@@ -112,7 +112,7 @@ export default function RedirectPage() {
  
                     <h2 className="text-2xl font-bold font-display text-foreground mb-2">Tautan Terkunci</h2>
                     <p className="text-xs sm:text-sm text-slate-400 leading-relaxed mb-8 max-w-xs mx-auto font-semibold">
-                        Tautan ini diamankan secara eksklusif. Masukkan kata sandi yang valid untuk dapat melanjutkan ke tujuan asli di <span className="text-cyan-500">fly.link</span>.
+                        Tautan ini diamankan secara eksklusif. Masukkan kata sandi yang valid untuk dapat melanjutkan ke tujuan asli di <span className="text-cyan-500">flyku.vercel.app</span>.
                     </p>
 
                     <form onSubmit={handlePasswordSubmit} className="space-y-4">

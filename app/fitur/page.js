@@ -30,7 +30,7 @@ export default function FiturPage() {
             </span>
           </h1>
           <p className="text-sm text-slate-400 leading-relaxed font-medium">
-            fly.link dirancang secara khusus untuk memberikan kecepatan pengalihan instan, analisis lengkap, dan keamanan tangguh tanpa batasan.
+            flyku.vercel.app dirancang secara khusus untuk memberikan kecepatan pengalihan instan, analisis lengkap, dan keamanan tangguh tanpa batasan.
           </p>
         </div>
 
@@ -44,7 +44,7 @@ export default function FiturPage() {
               </div>
               <h3 className="text-lg font-bold text-foreground font-display">Pengalihan Instan 0ms</h3>
               <p className="text-xs text-slate-400 leading-relaxed">
-                Kami memahami pentingnya waktu. Infrastruktur fly.link menjamin tautan Anda dialihkan seketika dengan latensi mendekati nol milidetik.
+                Kami memahami pentingnya waktu. Infrastruktur flyku.vercel.app menjamin tautan Anda dialihkan seketika dengan latensi mendekati nol milidetik.
               </p>
             </div>
             <div className="mt-6 flex items-center gap-2 text-xs font-semibold text-cyan-500">
