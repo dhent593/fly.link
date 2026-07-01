@@ -1,4 +1,5 @@
 'use client';
+import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { Heart, Sparkles, Smile, Star, ArrowUpRight } from 'lucide-react';
 import Navbar from '@/components/Navbar';
@@ -6,6 +7,10 @@ import Footer from '@/components/Footer';
 
 export default function TentangPage() {
   const router = useRouter();
+
+  useEffect(() => {
+    document.title = 'Flyku - Tentang Kami';
+  }, []);
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans relative overflow-hidden flex flex-col justify-between transition-colors duration-500">

@@ -29,6 +29,16 @@ export default function RedirectPage() {
         fetchSlug();
     }, [slug]);
 
+    useEffect(() => {
+        if (notFound) {
+            document.title = 'Flyku - Tautan Tidak Ditemukan';
+        } else if (redirecting || !linkData) {
+            document.title = 'Flyku - Memproses Pengalihan...';
+        } else if (linkData && linkData.password) {
+            document.title = 'Flyku - Tautan Terkunci';
+        }
+    }, [notFound, redirecting, linkData]);
+
     const executeRedirect = async (data) => {
         setRedirecting(true);
         // Tambah jumlah klik

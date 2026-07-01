@@ -1,4 +1,5 @@
 'use client';
+import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { Shield, Lock, Key, Server, AlertCircle } from 'lucide-react';
 import Navbar from '@/components/Navbar';
@@ -6,6 +7,10 @@ import Footer from '@/components/Footer';
 
 export default function KeamananPage() {
   const router = useRouter();
+
+  useEffect(() => {
+    document.title = 'Flyku - Keamanan';
+  }, []);
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans relative overflow-hidden flex flex-col justify-between transition-colors duration-500">

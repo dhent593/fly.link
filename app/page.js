@@ -23,6 +23,7 @@ export default function Home() {
 
   // Safe client-side reading of URL parameters and session checking
   useEffect(() => {
+    document.title = 'Flyku - Premium URL Shortener';
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams(window.location.search);
       const authVal = params.get('auth');

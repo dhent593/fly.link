@@ -63,6 +63,17 @@ export default function Dashboard() {
         }
     }, [user]);
 
+    useEffect(() => {
+        const tabTitles = {
+            ringkasan: 'Ringkasan',
+            kelola: 'Kelola Tautan',
+            qr: 'QR Generator',
+            pengaturan: 'Pengaturan'
+        };
+        const subTitle = tabTitles[activeTab] || 'Dashboard';
+        document.title = `Flyku - ${subTitle}`;
+    }, [activeTab]);
+
     const showToast = (message, type = 'success') => {
         setToast({ message, type, visible: true });
         setTimeout(() => setToast(prev => ({ ...prev, visible: false })), 4000);
